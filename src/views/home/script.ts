@@ -24,7 +24,8 @@ const data: HomeComponentState = {
     { name: "Taro", age: 20, gender: "Male" },
     { name: "Hanako", age: 18, gender: "Female" },
     { name: "Ichiro", age: 25, gender: "Male" }
-  ]
+  ],
+  alertFlag: true
 }
 
 export default Vue.extend({
