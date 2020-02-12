@@ -12,3 +12,14 @@ v-container.home
         :headers="tableHeaders", :items="tableItems"
         :options.sync="tableOptions", hide-default-footer
       )
+  .alert-wrapper
+    transition(appear name="right")
+      v-alert.text-left(
+        type="info", width="500px", prominent
+        color="green lighten-1"
+        v-show="alertFlag"
+      )
+        v-row(align="center")
+          v-col.title.font-weight-bold(cols=10) アラートだよ
+          v-col.text-right(cols=2)
+            v-icon.close-icon(@click="alertFlag = false") mdi-close-circle-outline

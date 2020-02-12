@@ -7,6 +7,7 @@ export type HomeComponentState = {
   tableHeaders: TableHeaders[]
   tableOptions: TableOptions
   tableItems: Array<{ name: string; age: number; gender: "Male" | "Female" }>
+  alertFlag: boolean
 }
 
 export type AuthComponentState = {
